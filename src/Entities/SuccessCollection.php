@@ -39,4 +39,24 @@ class SuccessCollection extends Collection
             return !empty($item->number);
         });
     }
+
+    /**
+     * @return \PcbKernel\Support\Collection
+     */
+    public function pluckIds()
+    {
+        return $this->map(function ($item) {
+            return $item->id;
+        });
+    }
+
+    /**
+     * @return \PcbKernel\Support\Collection
+     */
+    public function pluckNumbers()
+    {
+        return $this->map(function ($item) {
+            return $item->number;
+        });
+    }
 }
