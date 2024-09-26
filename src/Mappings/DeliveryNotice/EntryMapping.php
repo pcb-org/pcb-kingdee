@@ -1,0 +1,208 @@
+<?php
+
+namespace PcbKingdee\Mappings\DeliveryNotice;
+
+class EntryMapping
+{
+    /**
+     * @var array
+     */
+    public static $mapping = [
+        [
+            'name' => 'entry_id',
+            'attribute' => 'FEntity_FEntryId',
+            'field' => 'FEntryId',
+            'type' => 'int',
+            'comment' => '分录内码',
+        ],
+        [
+            'name' => 'seq',
+            'attribute' => 'FEntity_FSeq',
+            'field' => 'FSeq',
+            'type' => 'int',
+            'comment' => '行号',
+        ],
+        [
+            'name' => 'material_id',
+            'attribute' => 'FMaterialId',
+            'field' => 'FMaterialId',
+            'type' => 'int',
+            'comment' => '物料',
+        ],
+        [
+            'name' => 'material_number',
+            'attribute' => 'FMaterialId.FNumber',
+            'field' => 'FMaterialId.FNumber',
+            'type' => 'string',
+            'comment' => '物料',
+        ],
+        [
+            'name' => 'material_name',
+            'attribute' => 'FMaterialId.FName',
+            'field' => 'FMaterialId.FName',
+            'type' => 'string',
+            'comment' => '物料',
+        ],
+        [
+            'name' => 'material_spec',
+            'attribute' => 'FMaterialId.FSpecification',
+            'field' => 'FMaterialId.FSpecification',
+            'type' => 'string',
+            'comment' => '规格',
+        ],
+        [
+            'name' => 'unit_id',
+            'attribute' => 'FUnitId',
+            'field' => 'FUnitId',
+            'type' => 'int',
+            'comment' => '单位',
+        ],
+        [
+            'name' => 'unit_number',
+            'attribute' => 'FUnitId.FNumber',
+            'field' => 'FUnitId.FNumber',
+            'type' => 'string',
+            'comment' => '单位',
+        ],
+        [
+            'name' => 'unit_name',
+            'attribute' => 'FUnitId.FName',
+            'field' => 'FUnitId.FName',
+            'type' => 'string',
+            'comment' => '单位',
+        ],
+        [
+            'name' => 'qty',
+            'attribute' => 'FQty',
+            'field' => 'FQty',
+            'type' => 'int',
+            'comment' => '数量',
+        ],
+        [
+            'name' => 'stock_id',
+            'attribute' => 'FStockId',
+            'field' => 'FStockId',
+            'type' => 'int',
+            'comment' => '出货仓库',
+        ],
+        [
+            'name' => 'stock_number',
+            'attribute' => 'FStockId.FNumber',
+            'field' => 'FStockId.FNumber',
+            'type' => 'string',
+            'comment' => '出货仓库',
+        ],
+        [
+            'name' => 'stock_name',
+            'attribute' => 'FStockId.FName',
+            'field' => 'FStockId.FName',
+            'type' => 'string',
+            'comment' => '出货仓库',
+        ],
+        [
+            'name' => 'stock_loc_id',
+            'attribute' => 'FStockLocId',
+            'field' => 'FStockLocId',
+            'type' => 'int',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'stock_loc_f100001',
+            'attribute' => 'FStockLocId.FF100001',
+            'field' => 'FStockLocId.FStockLocId__FF100001',
+            'type' => 'int',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'stock_loc_f100001_number',
+            'attribute' => 'FStockLocId.FF100001.FNumber',
+            'field' => 'FStockLocId.FStockLocId__FF100001.FNumber',
+            'type' => 'string',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'stock_loc_f100001_name',
+            'attribute' => 'FStockLocId.FF100001.FName',
+            'field' => 'FStockLocId.FStockLocId__FF100001.FName',
+            'type' => 'string',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'stock_loc_f100002',
+            'attribute' => 'FStockLocId.FF100002',
+            'field' => 'FStockLocId.FStockLocId__FF100002',
+            'type' => 'int',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'stock_loc_f100002_number',
+            'attribute' => 'FStockLocId.FF100002.FNumber',
+            'field' => 'FStockLocId.FStockLocId__FF100002.FNumber',
+            'type' => 'string',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'stock_loc_f100002_name',
+            'attribute' => 'FStockLocId.FF100002.FName',
+            'field' => 'FStockLocId.FStockLocId__FF100002.FName',
+            'type' => 'string',
+            'comment' => '出货仓位',
+        ],
+        [
+            'name' => 'bom_id',
+            'attribute' => 'FBomId',
+            'field' => 'FBomId',
+            'type' => 'int',
+            'comment' => 'BOM版本',
+        ],
+        [
+            'name' => 'bom_number',
+            'attribute' => 'FBomId.FNumber',
+            'field' => 'FBomId.FNumber',
+            'type' => 'string',
+            'comment' => 'BOM版本',
+        ],
+        [
+            'name' => 'bom_name',
+            'attribute' => 'FBomId.FName',
+            'field' => 'FBomId.FName',
+            'type' => 'string',
+            'comment' => 'BOM版本',
+        ],
+        [
+            'name' => 'lot_id',
+            'attribute' => 'FLot',
+            'field' => 'FLot',
+            'type' => 'int',
+            'comment' => '批号',
+        ],
+        [
+            'name' => 'lot_number',
+            'attribute' => 'FLot.FNumber',
+            'field' => 'FLot.FNumber',
+            'type' => 'string',
+            'comment' => '批号',
+        ],
+        [
+            'name' => 'lot_name',
+            'attribute' => 'FLot.FName',
+            'field' => 'FLot.FName',
+            'type' => 'string',
+            'comment' => '批号',
+        ],
+        [
+            'name' => 'order_number',
+            'attribute' => 'FOrderNo',
+            'field' => 'FOrderNo',
+            'type' => 'string',
+            'comment' => '订单单号',
+        ],
+        [
+            'name' => 'order_seq',
+            'attribute' => 'FOrderSeq',
+            'field' => 'FOrderSeq',
+            'type' => 'int',
+            'comment' => '订单行号',
+        ],
+    ];
+}
